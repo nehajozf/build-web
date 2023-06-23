@@ -1,0 +1,234 @@
+
+/*  Navigation Bar  */
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+html,body{
+  height: 100%;
+}
+body{
+  display: grid;
+  place-items: center;
+  background: url("images/background.gif");
+  background-width: 90%;
+  background-size: cover;
+
+  background-position: center center;
+  bacground-repeat: repeat;
+
+
+
+}
+
+/* Different dog cards */
+.card{
+  position: relative;
+  height: 400px;
+  width: 340px;
+  display: block;
+  background: white;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.15);
+  transition: 0.4s linear;
+}
+.card:hover{
+  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+
+}
+.card .image{
+  background:black;
+  height: 400px;
+  overflow: hidden;
+}
+.image img{
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+}
+.card:hover .image img{
+  opacity: 0.6;
+  transform: scale(1.1);
+
+}
+.card .content{
+  position: absolute;
+  bottom: 0px;
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px 30px;
+}
+.content .title{
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+
+}
+.content .subtitle{
+  font-size: 18px;
+  font-weight: 500;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+/* Adopt me button */
+.bottom p{
+  color: #666666;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.8em;
+}
+.bottom button{
+  float: left;
+  padding: 7px 15px;
+  font-size: 15px;
+  background: #e74c3c;
+  color: white;
+  font-weight: 500;
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.bottom button:hover{
+  transform: scale(0.9);
+  background: #e64533;
+
+}
+
+
+
+/*footer */
+
+footer {
+  
+    background-color: #F4D19B;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin-bottom: -50px;
+
+
+}
+footer p{
+    font-family: "Courier", monospace;
+    font-size: 90%;
+}
